@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Future 3 month date calculator",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tannifer/futureDate.git"
@@ -19,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/tannifer/futureDate/issues"
   },
-  "homepage": "https://github.com/tannifer/futureDate#readme"
+  "homepage": "https://github.com/tannifer/futureDate#readme",
+  "dependencies": {
+    "webwebweb": "^1.6.1"
+  }
 }
