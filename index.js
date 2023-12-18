@@ -6,6 +6,9 @@ const path = require('path');
 
 
  app.use(bodyParser.urlencoded({ extended: true }));
+ app.set('view engine', 'pug');
+ app.set('views','./views');
+
 
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, '/index.html'));
@@ -16,7 +19,10 @@ app.post('/future',function(req,res){
     var startDate = req.body.futureDate;
     console.log(req.body.futureDate);
     var newDate = addTwelveWeeksRounded(startDate)
-    res.send(newDate.toLocaleString('en-GB'));
+    //res.send(newDate.toLocaleString('en-GB'));
+    res.render('answer',{
+        result: newDate.toLocaleString('en-GB')
+    });
 });
 
 
